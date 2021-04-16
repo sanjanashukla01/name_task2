@@ -32,7 +32,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Register"),
+        title: Text("Registration Form"),
         backgroundColor: Colors.blueGrey[900],
       ),
       body:SafeArea(
@@ -64,8 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           height: 1,
                           color: Colors.blueGrey,
                         ),
-                        hint: Text('Drop Down 1',),
-                        items: <String>['A', 'B', 'C', 'D'].map((String value) {
+                        hint: Text('Year',),
+                        items: <String>['II', 'III', 'IV'].map((String value) {
                           return new DropdownMenuItem<String>(
                             value: value,
                             child: new Text(value),
@@ -74,13 +74,13 @@ class _MyHomePageState extends State<MyHomePage> {
                         onChanged: (_) {},
                       ),
                       DropdownButton<String>(
-                        hint: Text('Drop Down 2'),
+                        hint: Text('Branch'),
                         style: const TextStyle(color: Colors.deepPurple),
                         underline: Container(
                           height: 1,
                           color: Colors.blueGrey,
                         ),
-                        items: <String>['P', 'Q', 'R', 'S'].map((String value) {
+                        items: <String>['Computer Society', 'Communication Society', 'Power and Energy Society', 'WIE Affinity Group'].map((String value) {
                           return new DropdownMenuItem<String>(
                             value: value,
                             child: new Text(value),
